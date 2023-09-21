@@ -1,26 +1,16 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import GalleryComponent from "./components/GalleryComponent.vue";
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<template>
+  <div class="min-h-screen py-8">
+    <div class="container mx-auto">
+      <h1 class="text-5xl bold mb-4 text-green-500 p-5">
+        Rick and Morty Character Gallery
+      </h1>
+      <GalleryComponent />
+    </div>
+  </div>
+</template>
+
+<style src="./main.css" />
